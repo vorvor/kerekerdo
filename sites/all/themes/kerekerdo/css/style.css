@@ -1,0 +1,17 @@
+.field-name-field-gallery {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.field-name-field-gallery .field-item {
+  float: left;
+}
+
+.field-name-field-separation-image img {
+	width: 100%;
+	display: block;
+}
+
+.paragraphs-items .field-item {
+  padding: 0 0 30px 0;
+}

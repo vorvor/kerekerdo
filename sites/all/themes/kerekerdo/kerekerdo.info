@@ -54,6 +54,7 @@ stylesheets[all][] = node.css
 
 ; Then we add our own stylesheet.
 stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/unite-gallery.css
 stylesheets[all][] = css/kerekerdo.css
 stylesheets[all][] = css/style.css
 
@@ -68,7 +69,8 @@ stylesheets[all][] = css/style.css
 ; Optionally add some JavaScripts to your theme.
 
 scripts[] = js/script.js
-
+scripts[] = js/unitegallery.js
+scripts[] = js/ug-theme-tilesgrid.js
 
 
 ; This section lists the regions defined in Zen's default page.tpl.php and

@@ -34,9 +34,49 @@ function kerekerdo_preprocess_maintenance_page(&$variables, $hook) {
  * @param string $hook
  *   The name of the template being rendered ("html" in this case.)
  */
-/* -- Delete this line if you want to use this function
+
 function kerekerdo_preprocess_html(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
+
+  // Get front page items in order.
+  $nqid = 1;
+  $query = db_select('node', 'n')
+    ->fields('n', array('nid'))
+    ->condition('nn.sqid', $nqid);
+  $query->join('nodequeue_nodes', 'nn', 'n.nid = nn.nid');
+
+  $result = $query->execute();
+
+  $menu_items = array();
+  $paragraphs = array();
+  foreach ($result as $nid) {
+    $node = node_load($nid->nid);
+    $paragraphs[strtolower(transliteration_get($node->title))] = $node;
+
+    $anchor = str_replace(' ', '', strtolower(transliteration_get($node->title)));
+    $menu_items[] = array(
+      'anchor' => $anchor,
+      'title' => $node->title,
+    );
+
+  }
+
+
+  $variables['menu_items'] = $menu_items;
+  $variables['paragraphs'] = $paragraphs;
+
+  // Contacts.
+  $contacts = node_load(16);
+  $contacts_wrapper = entity_metadata_wrapper('node', $contacts);
+  for ($c = 0; $c < count($contacts_wrapper->field_contact); $c++ ) {
+    //$item_id = $contacts_wrapper->field_contact[$c]->value()->item_id;
+    //$entities = entity_load('paragraphs_item', array($item_id));
+    //$contact_elements[] = entity_view('paragraphs_item', $entities, 'full');
+    $contact_elements[] = $contacts_wrapper->field_contact[$c]->value();
+  }
+
+  $variables['contacts'] = $contact_elements;
+
+
 
   // The body tag's classes are controlled by the $classes_array variable. To
   // remove a class from $classes_array, use array_diff().

@@ -66,7 +66,7 @@ table {
 
 html {
    
-  background: url("css/virag5.png") no-repeat center center fixed; 
+  background: url("../images/virag5.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -115,7 +115,7 @@ font-size:100%;
 padding-bottom: 10px;
 padding-top:10px;
 background-color: #39b54a;
-	background-image: url("css/zoldsav_hatter.png");
+	background-image: url("../images/zoldsav_hatter.png");
 		background-position: bottom;
 		background-repeat: repeat-x;
 		background-size:11px 53px; 
@@ -154,7 +154,7 @@ padding:0 15px; /* variable width */
 /*	background-color: blue;
 */	position: absolute;
 	
-	background-image: url("css/bal_feher.png");
+	background-image: url("../images/bal_feher.png");
 	background-position: left top;
 	background-repeat: no-repeat;
 	background-size: 40%;
@@ -171,15 +171,15 @@ padding:0 15px; /* variable width */
 	
 }
 
-div.header_kep {
+a.header_kep {
 	width: 100%;
 	height: 347px;
-	background-image: url("css/header_kep_logo2.jpg");
+	background-image: url("../images/header_kep_logo2.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
-
+	display:block;
 	
 }	
 
@@ -215,14 +215,6 @@ div.tartalom_kep {
 
 #tart_kep_1 {background-image: url("css/kerttervezes_ill.png");}
 #tart_kep_2 {background-image: url("css/kerttervezes_ill2.png");}
-
-#elv_kep_1  { background-image: url("css/kerttervezes_u.png"); }
-#elv_kep_2  { background-image: url("css/kertepites_u.png"); }
-#elv_kep_3  { background-image: url("css/kertgondozas_u.png"); }
-#elv_kep_4  { background-image: url("css/ontozorendszer_u.png"); }
-#elv_kep_5  { background-image: url("css/arak_u.png"); }
-#elv_kep_6  { background-image: url("css/magunkrol_u.png"); }
-#elv_kep_7  { background-image: url("css/elerhetoseg_u.png"); }
 
 #header_a_hely_szelleme { background-image: url("A_hely_szelleme/kepek/A_hely_szelleme_top.jpg"); }
 #header_egyenisegek_kertje { background-image: url("Egyenisegek_kertje/kepek/Egyenisegek_kertje_top.jpg"); }
@@ -266,7 +258,7 @@ div.galeria_wrapper_open {
 div.galeria_novenyek_open {
 	width:50%;
 	height: 327px;
-	background-image: url("css/galeria_novenyek.png");
+	background-image: url("../images/galeria_novenyek.png");
 	background-size: cover;
 	float:left;
 	font-size: 170%;
@@ -276,7 +268,7 @@ div.galeria_novenyek_open {
 div.galeria_kertek_open {
 	width:50%;
 	height: 327px;
-	background-image: url("css/galeria_kertek.png");
+	background-image: url("../images/galeria_kertek.png");
 	background-size: cover;
 	float:right;
 	font-size: 170%;
@@ -284,29 +276,29 @@ div.galeria_kertek_open {
     text-align: center;
 }
 div.galeria_kertek_open:hover{
- background-image: linear-gradient(to bottom, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_kertek.png");
-    background-image: -moz-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_kertek.png");
-    background-image: -o-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_kertek.png");
-    background-image: -ms-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_kertek.png");
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 187, 0, 0.5)), to(rgba(0, 187, 0, 0.5))), url("css/galeria_kertek.png");
-    background-image: -webkit-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_kertek.png");
+ background-image: linear-gradient(to bottom, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_kertek.png");
+    background-image: -moz-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_kertek.png");
+    background-image: -o-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_kertek.png");
+    background-image: -ms-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_kertek.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 187, 0, 0.5)), to(rgba(0, 187, 0, 0.5))), url("../images/galeria_kertek.png");
+    background-image: -webkit-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_kertek.png");
 }
 div.galeria_novenyek_open:hover{
- background-image: linear-gradient(to bottom, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_novenyek.png");
-    background-image: -moz-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_novenyek.png");
-    background-image: -o-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_novenyek.png");
-    background-image: -ms-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_novenyek.png");
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 187, 0, 0.5)), to(rgba(0, 187, 0, 0.5))), url("css/galeria_novenyek.png");
-    background-image: -webkit-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_novenyek.png");
+ background-image: linear-gradient(to bottom, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_novenyek.png");
+    background-image: -moz-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_novenyek.png");
+    background-image: -o-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_novenyek.png");
+    background-image: -ms-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_novenyek.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 187, 0, 0.5)), to(rgba(0, 187, 0, 0.5))), url("../images/galeria_novenyek.png");
+    background-image: -webkit-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_novenyek.png");
 }
 div.novenyek_open_hatter {
 	
-	 background-image: linear-gradient(to bottom, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_novenyek.png");
-    background-image: -moz-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_novenyek.png");
-    background-image: -o-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_novenyek.png");
-    background-image: -ms-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_novenyek.png");
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 187, 0, 0.5)), to(rgba(0, 187, 0, 0.5))), url("css/galeria_novenyek.png");
-    background-image: -webkit-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_novenyek.png");
+	 background-image: linear-gradient(to bottom, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_novenyek.png");
+    background-image: -moz-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_novenyek.png");
+    background-image: -o-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_novenyek.png");
+    background-image: -ms-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_novenyek.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 187, 0, 0.5)), to(rgba(0, 187, 0, 0.5))), url("../images/galeria_novenyek.png");
+    background-image: -webkit-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_novenyek.png");
 
 	
 	
@@ -314,12 +306,12 @@ div.novenyek_open_hatter {
 
 div.kertek_open_hatter{
 	
-	 background-image: linear-gradient(to bottom, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_kertek.png");
-    background-image: -moz-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_kertek.png");
-    background-image: -o-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_kertek.png");
-    background-image: -ms-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_kertek.png");
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 187, 0, 0.5)), to(rgba(0, 187, 0, 0.5))), url("css/galeria_kertek.png");
-    background-image: -webkit-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("css/galeria_kertek.png");
+	 background-image: linear-gradient(to bottom, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_kertek.png");
+    background-image: -moz-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_kertek.png");
+    background-image: -o-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_kertek.png");
+    background-image: -ms-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_kertek.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 187, 0, 0.5)), to(rgba(0, 187, 0, 0.5))), url("../images/galeria_kertek.png");
+    background-image: -webkit-linear-gradient(top, rgba(0, 187, 0, 0.5), rgba(0, 187, 0, 0.5)), url("../images/galeria_kertek.png");
 
 	
 	
@@ -392,15 +384,6 @@ text-decoration: none;
 
 	text-align:center;
 }	
-	
-#viktor {
-	background-image: url('css/viktor.png');
-	background-size:contain;	
-}	
-#berta {
-	background-image: url('css/berta.png');
-	background-size:contain;	
-}		
 	
 @media screen and (max-width: 600px) {
 
@@ -487,7 +470,7 @@ background-color: #39b54a;
 text-align: center;
 color:white;
 	background-color: #39b54a;
-	background-image: url("css/zoldsav_fel_hatter.png");
+	background-image: url("../images/zoldsav_fel_hatter.png");
 	background-position: top;
 	background-repeat: repeat-x;
 	background-size:11px 53px; 
@@ -505,7 +488,7 @@ a.back-to-top {
 	z-index: 999;
 	right: 20px;
 	bottom: 20px;
-	background: #39b54a url("css/fel_nyil.png") no-repeat center 43%;
+	background: #39b54a url("../images/fel_nyil.png") no-repeat center 43%;
 	background-size:cover;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -516,7 +499,8 @@ a.back-to-top {
 .container h1, 
 .container h2, 
 .container h3, 
-.container h4 {
+.container h4,
+.ug-gallery-wrapper {
 font-family: 'SimpleFont';
 /*padding-left: 20px;
 padding-right: 20px;

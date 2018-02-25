@@ -163,6 +163,12 @@ h1.elerhetoseg {
 	height:100%;
 }
 
+a.tel {
+	text-decoration: none;
+    color:#39b54a;
+font-weight:bolder;
+}
+
 .contact-odd {
 	width:50%;
 }
@@ -185,4 +191,82 @@ h1.elerhetoseg {
 
 .comment-wrapper {
 	display: none;
+}
+
+body.page-node-edit {
+	font-family: arial !important;
+}
+
+h2.dashboard {
+  text-align: center;
+color: #fff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #39b54a;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 11px 53px;
+}
+
+
+#dashboard {
+  font-family: Arial;
+  font-size: 0.6em;
+  padding: 10px;
+}
+
+#dashboard ul li {
+	padding: 10px 0;
+}
+
+
+table {
+    width: 100%;
+    font-size: 0.923em;
+    margin: 0 0 10px;
+    border: 1px solid #bebfb9;
+}
+
+table th.select-all {
+    width: 1px;
+}
+table th {
+    text-transform: uppercase;
+    background: #e1e2dc;
+    font-weight: normal;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bebfb9;
+    padding: 3px 10px;
+}
+table td, table th {
+    vertical-align: middle;
+    padding: 8px 10px;
+    border: 0;
+    color: #000;
+    text-align: left;
+}
+input.form-checkbox, input.form-radio {
+    vertical-align: middle;
+}
+input, select, textarea {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+tr.odd {
+    background: #fff;
+}
+tr.even, tr.odd {
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+    border-color: #bebfb9;
+    background: #f3f4ee;
+}
+table td, table th {
+    vertical-align: middle;
+    padding: 8px 10px;
+    border: 0;
+    color: #000;
+}
+tr.odd {
+    background: #fff;
 }

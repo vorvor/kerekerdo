@@ -13,7 +13,6 @@
   <meta name="Keywords" content="kerekerdő, kerttervezés, kertépítés, madárbarát kert, gyerekbarát kert, fenntartható kert, temetőkert" />
   <meta name="Description" content="Kerekerdő Kertépítő Kft. honlapja!" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Language" content="hu_HU" />
   <meta name="resource-type" content="document" />
   <meta property="og:url" content="http://www.kerekerdokert.hu" />
   <meta property="og:title" content="Kerekerdő Kertépítő Kft." />
@@ -38,10 +37,28 @@
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php 
-
     $contact_node = node_load(16);  
-
   ?>
+
+  
+
+  <?php
+
+    if (in_array('authenticated user', $user->roles)) { ?>
+    <div id="dashboard">
+    <h2 class="dashboard">Dashboard</h2>
+    <?php
+      $menu = menu_navigation_links('menu-dashboard');
+      print theme('links__menu_menu-dashboard', array('links' => $menu));
+
+      print views_embed_view('manage_content', 'block_1');
+    
+    ?>
+    </div>
+    <?php
+    }
+  ?>
+  
   <div class="container">
     <div class="header">
       <a href="/"class="header_kep"></a>

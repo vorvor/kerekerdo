@@ -142,7 +142,7 @@
         <div class="zold_sav"></div>
       
         <div class="cim">
-        <a name="galeria"><h1 class="galeria">
+        <a  class="item-title" name="galeria"><h1 class="galeria">
         <span class="bg_galeria"></span>Galéria</h1></a>
         </div>
         <div class="galeria_wrapper_open"> 
@@ -197,7 +197,7 @@
 
       <div class="menupont">
       <div class="zold_sav"></div>
-            <div class="cim"><a name="elerhetoseg">
+            <div class="cim"><a  class="item-title" name="elerhetoseg">
             <h1 class="elerhetoseg">
               <span class="bg_elerhetoseg"></span>
               Elérhetőség

@@ -72,7 +72,7 @@
 
     $('#nav a').each(function() {
 
-    	var anchor = $(this).attr('href').substring(1);
+    	var anchor = $(this).data('anchor');
     	$(this).click(function() {
     		scrollToAnchor(anchor);
     	})

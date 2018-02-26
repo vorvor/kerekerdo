@@ -16,6 +16,15 @@
   padding: 0 0 30px 0;
 }
 
+.page-node .paragraphs-items .field-item {
+  padding: 0;
+}
+
+.page-node a.vissza {
+  padding: 20px 0;
+  display: block;
+}
+
 a.item-title {
 	color: #000;
 }

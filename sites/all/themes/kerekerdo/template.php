@@ -59,6 +59,8 @@ function kerekerdo_preprocess_html(&$variables, $hook) {
     );
 
   }
+  $menu_items[] = array('anchor' => 'galeria', 'title' => 'Galéria');
+  $menu_items[] = array('anchor' => 'elerhetoseg', 'title' => 'Elérhetőség');
 
 
   $variables['menu_items'] = $menu_items;

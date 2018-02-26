@@ -66,7 +66,7 @@
       <ul id="nav">
         <?php
           foreach ($menu_items as $menu_item) { 
-            print '<li><a href="#' . $menu_item['anchor'] . '">' . $menu_item['title'] . '</a></li>';
+            print '<li><a href="/#' . $menu_item['anchor'] . '" data-anchor="' . $menu_item['anchor'] . '">' . $menu_item['title'] . '</a></li>';
           }
         ?>
         

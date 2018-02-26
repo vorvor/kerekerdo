@@ -43,7 +43,7 @@
 
   <?php print render($content['comments']); ?>
 
-</article>
+<a class="vissza" href="/#galeria">VISSZA A GALÉRIÁBA</a>
 
 <div id="garden-gallery">
 
@@ -61,6 +61,12 @@
           ),
         ));
   }
-?>
+  ?>
 
-</div>
+  </div>
+
+</article>
+
+
+
+

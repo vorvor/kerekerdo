@@ -17,12 +17,12 @@
  *   The name of the template being rendered ("maintenance_page" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function kerekerdo_preprocess_maintenance_page(&$variables, $hook) {
+function ontozo_kerekerdo_preprocess_maintenance_page(&$variables, $hook) {
   // When a variable is manipulated or added in preprocess_html or
   // preprocess_page, that same work is probably needed for the maintenance page
   // as well, so we can just re-use those functions to do that work here.
-  kerekerdo_preprocess_html($variables, $hook);
-  kerekerdo_preprocess_page($variables, $hook);
+  ontozo_kerekerdo_preprocess_html($variables, $hook);
+  ontozo_kerekerdo_preprocess_page($variables, $hook);
 }
 // */
 
@@ -35,7 +35,7 @@ function kerekerdo_preprocess_maintenance_page(&$variables, $hook) {
  *   The name of the template being rendered ("html" in this case.)
  */
 
-function kerekerdo_preprocess_html(&$variables, $hook) {
+function ontozo_kerekerdo_preprocess_html(&$variables, $hook) {
 
   // Get front page items in order.
   $nqid = 1;
@@ -97,7 +97,7 @@ function kerekerdo_preprocess_html(&$variables, $hook) {
  *   The name of the template being rendered ("page" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function kerekerdo_preprocess_page(&$variables, $hook) {
+function ontozo_kerekerdo_preprocess_page(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');
 }
 // */
@@ -111,7 +111,7 @@ function kerekerdo_preprocess_page(&$variables, $hook) {
  *   The name of the template being rendered ("region" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function kerekerdo_preprocess_region(&$variables, $hook) {
+function ontozo_kerekerdo_preprocess_region(&$variables, $hook) {
   // Don't use Zen's region--no-wrapper.tpl.php template for sidebars.
   if (strpos($variables['region'], 'sidebar_') === 0) {
     $variables['theme_hook_suggestions'] = array_diff(
@@ -130,7 +130,7 @@ function kerekerdo_preprocess_region(&$variables, $hook) {
  *   The name of the template being rendered ("block" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function kerekerdo_preprocess_block(&$variables, $hook) {
+function ontozo_kerekerdo_preprocess_block(&$variables, $hook) {
   // Add a count to all the blocks in the region.
   // $variables['classes_array'][] = 'count-' . $variables['block_id'];
 
@@ -153,11 +153,11 @@ function kerekerdo_preprocess_block(&$variables, $hook) {
  *   The name of the template being rendered ("node" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function kerekerdo_preprocess_node(&$variables, $hook) {
+function ontozo_kerekerdo_preprocess_node(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');
 
   // Optionally, run node-type-specific preprocess functions, like
-  // kerekerdo_preprocess_node_page() or kerekerdo_preprocess_node_story().
+  // ontozo_kerekerdo_preprocess_node_page() or ontozo_kerekerdo_preprocess_node_story().
   $function = __FUNCTION__ . '_' . $variables['node']->type;
   if (function_exists($function)) {
     $function($variables, $hook);
@@ -174,7 +174,7 @@ function kerekerdo_preprocess_node(&$variables, $hook) {
  *   The name of the template being rendered ("comment" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function kerekerdo_preprocess_comment(&$variables, $hook) {
+function ontozo_kerekerdo_preprocess_comment(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');
 }
 // */

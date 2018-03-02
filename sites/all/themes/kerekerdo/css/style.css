@@ -1,3 +1,7 @@
+.content p {
+  margin: 1em 0;
+}
+
 .field-name-field-gallery {
   width: 90%;
   margin: 0 auto;

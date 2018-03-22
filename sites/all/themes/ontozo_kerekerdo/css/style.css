@@ -182,13 +182,8 @@ a.tel {
 font-weight:bolder;
 }
 
-.contact-odd {
-	width:50%;
-}
-
-.contact-even {
-    width:50%;
-	min-width:25%;
+.contact-odd, .contact-even {
+	width:32.2%;
 }
 
 .tel,

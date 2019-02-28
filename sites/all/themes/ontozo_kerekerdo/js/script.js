@@ -148,19 +148,21 @@
 		return false;
 	})
 
-	$("#garden-gallery, #kerttervezes-gallery").unitegallery({
-		tile_width:280,
-		tile_height:200,
-		grid_padding:0,
-		grid_num_rows:30,
-		tile_overlay_color: "#00bb00",
-		tile_enable_border:false,
-		tile_enable_shadow:false,	
-		lightbox_overlay_color:"#000000",				
-		lightbox_overlay_opacity:0.8,	
-		lightbox_textpanel_title_font_size:50,
-		lightbox_numbers_size:40,
-		lightbox_show_textpanel: false,
+	$(".wannabe-unite-gallery").each(function() {
+		$(this).unitegallery({
+			tile_width:280,
+			tile_height:200,
+			grid_padding:0,
+			grid_num_rows:30,
+			tile_overlay_color: "#00bb00",
+			tile_enable_border:false,
+			tile_enable_shadow:false,	
+			lightbox_overlay_color:"#000000",				
+			lightbox_overlay_opacity:0.8,	
+			lightbox_textpanel_title_font_size:50,
+			lightbox_numbers_size:40,
+			lightbox_show_textpanel: false,
+		});
  	});
 
  	$("#frontpage-plant-gallery").unitegallery({

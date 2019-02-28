@@ -162,7 +162,7 @@ h1.elerhetoseg {
 
 
 #galeria_kertek,
-#galeria_novenyek {
+#galeria_kozterek {
 	display: none;
 }
 
@@ -183,11 +183,11 @@ font-weight:bolder;
 }
 
 .contact-odd {
-	width:50%;
+	width:32.2%;
 }
 
 .contact-even {
-    width:50%;
+    width:32.2%;
 	min-width:25%;
 }
 

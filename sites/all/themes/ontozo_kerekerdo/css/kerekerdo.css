@@ -345,7 +345,7 @@ text-decoration: none;
 	
 	.elerhetoseg_wrapper{
 	width:100%;
-	height:325px;
+	height:400px;
 	}
 .elerhetoseg_1, .elerhetoseg_2{
 	float:left;
@@ -526,5 +526,15 @@ padding-bottom: 20px;
 h4{
 font-size: 110%;
 padding-bottom: 5px;
+}
+
+.field-name-field-lead .field-item,
+.field-name-field-text .field-item {
+  text-align: justify;
+}
+
+
+#map {
+	line-height: 0;
 }
 

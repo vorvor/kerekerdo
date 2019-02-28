@@ -160,12 +160,6 @@ h1.elerhetoseg {
     display: inline-block;
 }
 
-
-#galeria_kertek,
-#galeria_novenyek {
-	display: none;
-}
-
 .view-gallery .views-row {
 	float: left;
 	margin-left: 20px;

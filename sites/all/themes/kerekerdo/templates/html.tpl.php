@@ -40,8 +40,6 @@
     $contact_node = node_load(16);  
   ?>
 
-  
-
   <?php
 
     if (in_array('authenticated user', $user->roles)) { ?>
@@ -105,7 +103,7 @@
               $body = field_view_field('node', $node, 'field_body', 'default');
               print render($body);
             ?>
-            <div id="<?php print $key; ?>-gallery">
+            <div id="<?php print $key; ?>-gallery" class="wannabe-unite-gallery">
             <?php
               $node_wrapper = entity_metadata_wrapper('node', $node);
               foreach ($node_wrapper->field_gallery->value() as $photo) {
@@ -146,49 +144,29 @@
         <span class="bg_galeria"></span>Galéria</h1></a>
         </div>
         <div class="galeria_wrapper_open"> 
-          <div class="galeria_novenyek_open">
-            <a href="#"> Növények </a>
+          <div class="galeria_kozterek_open">
+            <a href="#"> Köztéri kertek </a>
           </div>
           <div class="galeria_kertek_open">
-            <a href="#"> Kertek </a>
+            <a href="#"> Magán kertek </a>
           </div>
         </div>
       
-        <div id="galeria_novenyek" >
-          <div id="frontpage-plant-gallery">
+        <div id="galeria_kozterek" >
 
-            <?php
-              $node = node_load(15);
-              $node_wrapper = entity_metadata_wrapper('node', $node);
-              foreach ($node_wrapper->field_gallery->value() as $photo) {
-                print theme_image_style(
-                  array(
-                    'path' => $photo['uri'], 
-                    'width' => $photo['width'],
-                    'height' => $photo['height'],
-                    'alt' => $photo['alt'],
-                    'title' => $photo['title'],
-                    'style_name' => 'gallery',
-                    'attributes' => array(
-                      'data-image' => file_create_url($photo['uri']),
-                      ),
-                    ));
-              }
-            ?>
-
-          </div>
+        <?php
+          // Gallery public gardens.
+          print views_embed_view('gallery', 'block_1');
+        ?>
+          
         </div>
     
         <div id="galeria_kertek" >
-
           
         <?php
           // Gallery gardens.
           print views_embed_view('gallery', 'block');
         ?>
-       
-   
-
        
         </div>
 
@@ -223,8 +201,8 @@
               ?>
             </div>
             <div class="info"><p>
-            <h2><?php print $contact->field_person_name['und'][0]['value']; ?></h2>
-            <?php print $contact->field_specialization['und'][0]['value']; ?><br/>
+            <h2><?php print check_markup($contact->field_person_name['und'][0]['value']); ?></h2>
+            <?php print check_markup($contact->field_specialization['und'][0]['value']); ?><br/>
             
             <?php
               preg_match('/(.*?)@(.*?)\.(.*)/', $contact->field_email['und'][0]['email'], $matches);
@@ -249,7 +227,9 @@
       </div>
       </p>
 
-
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1343.3412018269782!2d19.0702865!3d47.6711659!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741d67a57af45dd%3A0x672d55155b4ffb63!2zS2VyZWtlcmTFkSBLZXJ0w6lww610xZEgS2Z0Lg!5e0!3m2!1shu!2shu!4v1550256890795" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
 
       <div id="elv_kep_7" class="elvalaszto_kep">
         <?php

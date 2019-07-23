@@ -19,12 +19,14 @@
   <meta property="og:image" content="http://www.kerekerdokert.hu/kerekerdo_logo.png" />
   <meta property="og:description" content="Fiatal, szakképzett csapatunk örömmel segít álmai kertjének megvalósításában, tapasztalattal, szaktudással öntve formába elképzeléseit. Honlapunkon olvashat rólunk, arról, hogy hogyan, milyen alapelvek mentén, milyen szempontok szem előtt tartásával dolgozunk. " />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title><?php print $head_title; ?></title>
 
   <?php if ($default_mobile_metatags): ?>
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   <?php endif; ?>
 
   <?php print $styles; ?>

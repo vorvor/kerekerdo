@@ -283,3 +283,32 @@ table td, table th {
 tr.odd {
     background: #fff;
 }
+
+@media screen and (max-width: 800px) {
+    /*375-800*/
+    ul#nav {
+      padding: 20px 0;
+    }
+
+    ul#nav li {
+      display: block;
+    }
+
+    .elerhetoseg_wrapper {
+      height: auto;
+    }
+
+    .contact {
+      float: none;
+      width: 100% !important;
+      height: auto;
+    }
+
+    .contact .info {
+      height: auto;
+    }
+
+    .galeria_kertek_open a, .galeria_kozterek_open a {
+      font-size: 38px;
+    }
+  }

@@ -128,7 +128,12 @@
                       ),
                   ));
               }
+
+              if ($key == 'esemenyeink') {
+                print views_embed_view('events', 'block');
+              }
             ?>
+
             </div>
             <div style="clear:both;"></div>
         

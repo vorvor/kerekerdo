@@ -304,7 +304,7 @@ tr.odd {
 }
 
 .menupont:nth-child(4) .lead,
-.menupont:nth-child(21) .lead {
+.menupont:nth-child(10) .lead {
   -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
@@ -315,3 +315,17 @@ tr.odd {
     -moz-column-rule: 1px solid lightgrey;
     column-rule: 1px solid lightgrey;
 }
+
+#events .views-field-field-photo {
+  float: left;
+  margin-right: 15px;
+}
+
+#events .views-field-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+
+

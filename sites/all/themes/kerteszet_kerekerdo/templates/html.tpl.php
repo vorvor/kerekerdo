@@ -175,7 +175,7 @@
                     'height' => $photo['height'],
                     'alt' => $photo['alt'],
                     'title' => $photo['title'],
-                    'style_name' => 'gallery',
+                    'style_name' => 'crop',
                     'attributes' => array(
                       'data-image' => file_create_url($photo['uri']),
                       ),

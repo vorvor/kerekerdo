@@ -113,6 +113,11 @@
               $body = field_view_field('node', $node, 'field_body', 'default');
               print render($body);
             ?>
+            <?php
+            if ($key == 'esemenyeink') {
+              print '<div id="events">' . views_embed_view('events', 'block') . '</div>';
+            }
+            ?>
             <div id="<?php print $key; ?>-gallery" class="wannabe-unite-gallery">
             <?php
               $node_wrapper = entity_metadata_wrapper('node', $node);
@@ -129,9 +134,6 @@
                   ));
               }
 
-              if ($key == 'esemenyeink') {
-                print views_embed_view('events', 'block');
-              }
             ?>
 
             </div>

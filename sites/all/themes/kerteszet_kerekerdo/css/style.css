@@ -303,8 +303,8 @@ tr.odd {
   margin: 0 20px 20px 0;
 }
 
-.menupont:nth-child(4) .lead,
-.menupont:nth-child(10) .lead {
+.menupont:nth-child(4) .lead p,
+.menupont:nth-child(10) .lead p {
   -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
@@ -316,6 +316,10 @@ tr.odd {
     column-rule: 1px solid lightgrey;
 }
 
+#events .views-row {
+  margin-bottom: 15px;
+}
+
 #events .views-field-field-photo {
   float: left;
   margin-right: 15px;
@@ -323,7 +327,7 @@ tr.odd {
 
 #events .views-field-title {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 40px;
 }
 
 

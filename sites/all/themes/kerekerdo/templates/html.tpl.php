@@ -216,7 +216,12 @@
             ?>
             <p class="lev" data-a="<?php print $matches[2]; ?>" data-b="<?php print $matches[1]; ?>" data-c="<?php print $matches[3]; ?>">
             </p>
-            <?php print '<a class="tel" href="tel:' . $contact->field_mobile['und'][0]['value'] . '">' . $contact->field_mobile['und'][0]['value'] . '</a>'; ?>
+            <?php 
+            if (!empty($contact->field_mobile)) {
+              print '<a class="tel" href="tel:' . $contact->field_mobile['und'][0]['value'] . '">' . $contact->field_mobile['und'][0]['value'] . '</a>'; 
+            }
+
+            ?>
             <br/>
             </p></div>
           </div>

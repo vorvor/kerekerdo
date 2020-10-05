@@ -284,6 +284,59 @@ tr.odd {
     background: #fff;
 }
 
+.paragraphs-item-image-text {
+    margin-bottom: 30px;
+}
+
+.paragraphs-item-image-text .field-name-field-photo {
+    float: left;
+    line-height: 0;
+    margin: 0 20px 20px 0;
+}
+
+.page-node .paragraphs-items .field-item {
+    padding: 0;
+    overflow: hidden;
+}
+
+.menupont.magunkrol .paragraphs-items {
+  overflow: hidden;
+}
+
+.menupont.magunkrol .field-item:nth-child(4),
+.menupont.magunkrol .field-item:nth-child(5),
+.menupont.magunkrol .field-item:nth-child(6),
+.menupont.magunkrol .field-item:nth-child(7) {
+  float: left;
+  width: 23%;
+  margin-right: 2%;
+}
+
+.menupont.magunkrol .field-item:nth-child(8) {
+  clear: both;
+}
+
+.menupont.magunkrol .field-item:nth-child(4) .field,
+.menupont.magunkrol .field-item:nth-child(5) .field,
+.menupont.magunkrol .field-item:nth-child(6) .field,
+.menupont.magunkrol .field-item:nth-child(7) .field {
+  float: none;
+}
+
+.view-gallery .views-row {
+  position: relative;
+}
+
+.view-gallery .views-row .views-field-title {
+  background-color: rgba(57, 181, 74, 0.8);
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 20%;
+}
+
 @media screen and (max-width: 800px) {
     /*375-800*/
     ul#nav {
@@ -310,5 +363,14 @@ tr.odd {
 
     .galeria_kertek_open a, .galeria_kozterek_open a {
       font-size: 38px;
+    }
+
+    .menupont.magunkrol .field-item:nth-child(4),
+    .menupont.magunkrol .field-item:nth-child(5),
+    .menupont.magunkrol .field-item:nth-child(6),
+    .menupont.magunkrol .field-item:nth-child(7) {
+      float: none;
+      width: 100%;
+      margin-right: 0;
     }
   }

@@ -15,7 +15,7 @@
   'use strict';
 
   // To understand behaviors, see https://drupal.org/node/756722#behaviors
-  Drupal.behaviors.my_custom_behavior = {
+  Drupal.behaviors.kerekerdo_behavior = {
     attach: function (context, settings) {
 
     var amountScrolled = 300;
@@ -129,6 +129,20 @@
 		return false;
 	})
 
+	// Check URL fro params, and set gallery open if user comes back from gallery node.
+	$.urlParam = function(name){
+	    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+	    if (results==null){
+	       return null;
+	    }
+	    else{
+	       return results[1] || 0;
+	    }
+	}
+
+	$('#galeria_' + $.urlParam('gallery')).show();
+
+
 	$(".galeria_novenyek_open").click(function() {
 		if ($("#galeria_novenyek").is(":visible")){
 		$(".galeria_novenyek_open").removeClass('novenyek_open_hatter');
@@ -165,6 +179,7 @@
 		});
  	});
 
+ 	/*
  	$("#frontpage-plant-gallery").unitegallery({
 
 		tile_width:280,
@@ -186,7 +201,7 @@
 		
 		lightbox_slider_control_zoom:false,
 	});
-
+	*/
 
 
 

@@ -160,32 +160,35 @@
         <a  class="item-title" name="galeria"><h1 class="galeria">
         <span class="bg_galeria"></span>Galéria</h1></a>
         </div>
-        
-        <div id="galeria_novenyek" >
-          <div id="frontpage-plant-gallery">
-
-            <?php
-              $node = node_load(15);
-              $node_wrapper = entity_metadata_wrapper('node', $node);
-              foreach ($node_wrapper->field_gallery->value() as $photo) {
-                print theme_image_style(
-                  array(
-                    'path' => $photo['uri'], 
-                    'width' => $photo['width'],
-                    'height' => $photo['height'],
-                    'alt' => $photo['alt'],
-                    'title' => $photo['title'],
-                    'style_name' => 'cropped',
-                    'attributes' => array(
-                      'data-image' => file_create_url($photo['uri']),
-                      ),
-                    ));
-              }
-            ?>
-
+        <div class="galeria_wrapper_open"> 
+          <div class="galeria_novenyek_open">
+            <a href="#"> Növények </a>
           </div>
-        </div>    
-      </div>  
+          <div class="galeria_kertek_open">
+            <a href="#"> Kertek </a>
+          </div>
+        </div>
+      
+        <div id="galeria_novenyek" >
+
+        <?php
+          // Gallery public gardens.
+          print views_embed_view('gallery', 'block_1');
+        ?>
+          
+        </div>
+    
+        <div id="galeria_kertek" >
+          
+        <?php
+          // Gallery gardens.
+          print views_embed_view('gallery', 'block');
+        ?>
+       
+        </div>
+
+            
+      </div>
 
       <div class="menupont">
       <div class="zold_sav"></div>

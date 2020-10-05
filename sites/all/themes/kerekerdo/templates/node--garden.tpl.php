@@ -43,9 +43,9 @@
 
   <?php print render($content['comments']); ?>
 
-<a class="vissza" href="/#galeria">VISSZA A GALÉRIÁBA</a>
+<a class="vissza" href="/?g=kertek#galeria">VISSZA A GALÉRIÁBA</a>
 
-<div id="garden-gallery">
+<div id="garden-gallery" class="wannabe-unite-gallery">
 
 <?php
   $node_wrapper = entity_metadata_wrapper('node', $node);

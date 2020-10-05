@@ -178,3 +178,22 @@ function kerekerdo_preprocess_comment(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');
 }
 // */
+
+/**
+ * Implements hook_preprocess_entity().
+*
+ * Add class with paragraphs entity id to paragraphs item.
+ */
+function kerekerdo_preprocess_entity(&$variables) {
+  // Only run with paragraphs_item entity.
+  if (!empty($variables['entity_type']) == 'paragraphs_item') {
+    if (!empty($variables['paragraphs_item'])) {
+      // Get paragraph entity.
+      $entity = $variables['paragraphs_item'];
+      // Define class name.
+      $class = 'paragraphs-item-' . $entity->item_id;
+      // Add class to classes_array.
+      $variables['classes_array'][] = drupal_html_class($class);
+    }
+  }
+}

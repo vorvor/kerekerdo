@@ -187,13 +187,6 @@
 		lightbox_slider_control_zoom:false,
 	});
 
-
-
-
-
-
-
-
 }
 };
 

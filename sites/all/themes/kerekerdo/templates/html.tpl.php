@@ -85,7 +85,7 @@
     }
     else { 
       $c = 0;
-        foreach ($paragraphs as $key=>$node) {
+        foreach ($paragraphs as $key => $node) {
           $c++;
           if ($c > 1) {
              print '<div class="zold_sav"></div>';
@@ -93,7 +93,7 @@
           $key = str_replace(' ', '', $key);
       ?>
 
-      <div class="menupont">
+      <div class="menupont <?php print $key; ?>">
         
         <div class="cim"><a class="item-title" name="<?php print $key; ?>"><h1 class="<?php print $key; ?>">
         <span class="bg_<?php print $key; ?>"></span>

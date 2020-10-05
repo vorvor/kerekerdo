@@ -42,6 +42,7 @@
 
 .page-node .paragraphs-items .field-item {
   padding: 0;
+  overflow: hidden;
 }
 
 .page-node a.vissza {
@@ -152,6 +153,11 @@ h1.galeria {
   margin-left: 0px;
 }
 
+#galeria_kertek,
+#galeria_novenyek {
+  display: none;
+}
+
 
 .bg_galeria {
 	content: "";
@@ -192,7 +198,7 @@ h1.elerhetoseg {
 
 a.tel {
 	text-decoration: none;
-    color:#4286f4;
+    color:#CCA866;
 font-weight:bolder;
 }
 
@@ -224,7 +230,7 @@ h2.dashboard {
 color: #fff;
     padding-bottom: 10px;
     padding-top: 10px;
-    background-color: #4286f4;
+    background-color: #CCA866;
     background-position: bottom;
     background-repeat: repeat-x;
     background-size: 11px 53px;
@@ -302,7 +308,7 @@ tr.odd {
   line-height: 0;
   margin: 0 20px 20px 0;
 }
-
+/*
 .menupont:nth-child(4) .lead .field-item,
 .menupont:nth-child(10) .lead .field-item {
   -webkit-column-count: 3;
@@ -315,9 +321,11 @@ tr.odd {
     -moz-column-rule: 1px solid lightgrey;
     column-rule: 1px solid lightgrey;
 }
+*/
 
 #events .views-row {
   margin-bottom: 15px;
+  overflow: hidden;
 }
 
 #events .views-field-field-photo {

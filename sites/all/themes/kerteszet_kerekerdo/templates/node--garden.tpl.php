@@ -43,14 +43,14 @@
 
   <?php print render($content['comments']); ?>
 
-<a class="vissza" href="/#galeria">VISSZA A GALÉRIÁBA</a>
+<a class="vissza" href="/?gallery=kertek#galeria">VISSZA A GALÉRIÁBA</a>
 
-<div id="garden-gallery">
+<div id="garden-gallery"  class="wannabe-unite-gallery">
 
 <?php
   $node_wrapper = entity_metadata_wrapper('node', $node);
   foreach ($node_wrapper->field_gallery->value() as $photo) {
-    print theme_image_style(
+    $image = theme_image_style(
       array(
         'path' => $photo['uri'], 
         'width' => $photo['width'],
@@ -60,13 +60,11 @@
           'data-image' => file_create_url($photo['uri']),
           ),
         ));
+
+    print $image;
   }
   ?>
 
   </div>
 
 </article>
-
-
-
-
